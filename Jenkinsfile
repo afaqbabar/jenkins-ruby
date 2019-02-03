@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'java -version'
                 sh 'python --version'
-                sh "echo "puts 'Hello World from Ruby'" > hello.rb" 
+                writeFile file: 'hello.ruby', text: 'Hello world from Ruby' 
             }
         }
     }
