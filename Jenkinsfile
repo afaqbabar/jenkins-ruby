@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'java -version'
                 sh 'python --version'
-                sh "echo "puts 'Hello World from Ruby'" > hello.rb" 
+                sh "echo 'Hello World from Ruby'" 
             }
         }
     }
